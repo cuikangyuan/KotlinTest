@@ -77,4 +77,39 @@ class PackageDemoTest {
         variableVSValue.breakDemo_2()
 
     }
+
+
+    @Test
+    fun testThisDemo() {
+
+        val demo = ThisDemo()
+
+        println(demo.whatIsThis())
+    }
+
+    @Test
+    fun testThisKeyWord() {
+
+        val outer = Outer()
+
+        outer.Inner().m()
+    }
+
+    @Test
+    fun testSuperKeyWord() {
+
+        val son = Son("Harry")
+
+        son.love()
+    }
+
+    @Test
+    fun testPointUnaryMinus() {
+
+        val p = Point(1, 1)
+
+        val np = -p
+
+        println(np)
+    }
 }
