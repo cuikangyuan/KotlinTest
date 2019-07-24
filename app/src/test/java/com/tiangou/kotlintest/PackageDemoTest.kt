@@ -142,4 +142,26 @@ class PackageDemoTest {
         demo.useExtensions()
 
     }
+
+    @Test
+    fun testGetLength1() {
+
+        val demo = NullableDemo()
+
+        //通过编译时强制排除空指针的错误 大大减少NPE
+        //demo.getLength1(null)
+
+    }
+
+    @Test
+    fun testGetLength2() {
+
+        val demo = NullableDemo()
+
+        //通过编译时强制排除空指针的错误 大大减少NPE
+        println(demo.getLength2(null))
+
+        //println(demo.getLength2("null"))
+
+    }
 }
