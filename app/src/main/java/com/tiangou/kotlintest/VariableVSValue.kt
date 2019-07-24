@@ -371,4 +371,11 @@ class VariableVSValue {
 
     val concat = fun String.(x:Any) = this + x
 
+
+    val x = null
+    val y = x?:0
+
+
+
+
 }

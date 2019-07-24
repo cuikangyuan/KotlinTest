@@ -112,4 +112,34 @@ class PackageDemoTest {
 
         println(np)
     }
+
+    @Test
+    fun testCounterIndexPlus() {
+
+        val c = Counter(1)
+
+        val cplus = c + 10
+
+        println(cplus)
+    }
+
+    @Test
+    fun testInfixFunction() {
+
+        val person = Person("Jack", 20)
+
+        println(person.grow(2))
+
+        println(person grow 2)
+
+    }
+
+    @Test
+    fun ExtensionDemoTest() {
+
+        val demo = ExtensionDemo()
+
+        demo.useExtensions()
+
+    }
 }
