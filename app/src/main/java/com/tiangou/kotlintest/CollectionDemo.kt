@@ -158,6 +158,33 @@ class CollectionDemo {
 
 
 
+        val list13 = listOf(1, 2, 3, 4, 5, 6, 7)
+
+        println(list13.map { it })
+        println(list13.map { it * it })
+        println(list13.map { it + 10 })
+
+        println(list13.mapIndexed { index, i -> index * i })
+
+
+        //Pair("key", "value") 等价于 "key" to "value"
+        val programmer = listOf("K&R" to "C", "Bjar" to "C++", "Linus" to "C", "James" to "Java")
+        println(programmer)
+        println(programmer.groupBy({it.second}, {it.first}))
+
+
+        val words = listOf("a", "abc", "ab", "def", "abcd")
+        words.groupBy { it.length }
+        words.groupBy({it.length}, {it.contains("b")})
+
+
+        val words2 = "one two three four five six seven eight nine ten".split(" ")
+        words2.groupingBy { it.first() }.eachCount()
+
+        val listPair = listOf(Pair(1, 2), Pair(3, 4), Pair(5, 6))
+        println(listPair)
+        println(listPair.unzip())
+
     }
 
 }
