@@ -185,6 +185,68 @@ class CollectionDemo {
         println(listPair)
         println(listPair.unzip())
 
+
+        val map1 = mapOf<String, Int>()
+
+        map1.size
+        map1.isEmpty()
+
+        val map2 = emptyMap<String, Int>()
+        map2.size
+        map2.isEmpty()
+
+        map2 == map1 //空map 相等
+
+        val map = mapOf(1 to "x", 2 to "y", 3 to "Z")
+        map
+
+        map.get(1)
+
+        map.get(2)
+
+        map.get(3)
+
+        map.entries //不可编辑
+
+        val map3 = mutableMapOf<Int, Any?>()
+        map3.isEmpty()
+
+        map3[1] = "x"
+        map3[2] = 1
+
+        map3
+
+
+        val map4 = mutableMapOf(1 to "x", 2 to "y", 1 to "z")
+        //map 中重复的key 后面的会直接覆盖前面的
+
+
+        val mp5 = hashMapOf(1 to "x", 2 to "y", 3 to "z")
+
+        val map6 = linkedMapOf<Int, String>()
+
+        val map7 = linkedMapOf(1 to "x", 2 to "y", 3 to "z")
+
+
+        //创建一个key 升序的 TreeMap
+        val map8 = sortedMapOf(Pair("c", 3), Pair("b", 2), Pair("d", 3))
+
+        val map9 = mapOf("x" to 1, "y" to 2, "z" to 3)
+
+        map9.entries
+        map9.entries.forEach({ println("key=" + it.key + " value = " + it.value)})
+        map9.keys
+        map9.values
+        map9.size
+        map9["x"]
+        map9.get("x")
+
+        //map9.getOrDefault("x", 0)
+
+        map9.containsKey("x")
+        map9.containsValue(2)
+
+
     }
 
 }
