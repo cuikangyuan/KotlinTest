@@ -185,6 +185,7 @@ class CollectionDemo {
         println(listPair)
         println(listPair.unzip())
 
+<<<<<<< HEAD
 
         val map1 = mapOf<String, Int>()
 
@@ -246,12 +247,6 @@ class CollectionDemo {
         map9.containsKey("x")
         map9.containsValue(2)
 
-        //TODO test
-
-
-
-
-        
     }
 
 }
