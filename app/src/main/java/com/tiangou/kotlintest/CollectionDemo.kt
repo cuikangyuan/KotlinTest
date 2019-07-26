@@ -246,6 +246,8 @@ class CollectionDemo {
         map9.containsKey("x")
         map9.containsValue(2)
 
+        //1
+
     }
 
 }
